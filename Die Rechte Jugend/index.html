@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="Fotos/Logo.jpg">
+    <title>DRJ Startseite</title>
+    <style>
+    :root { 
+    --primary: #8b2626;     /* Klarer, gedeckter Rot-Ton */
+    --accent: #2d2d2d;      /* Dunkles Anthrazit für klare Kontraste */
+    --highlight: #c59b27;   /* Dezent eingesetztes Gold */
+    --bg: #f9f9f9;          /* Sehr helles, modernes Off-White */
+    --panel-bg: #ffffff;    /* Reines Weiß für die Inhaltsboxen */
+    --text: #222222;        /* Dunkles Grau für exzellente Lesbarkeit */
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+}
+
+body { 
+    background-color: var(--bg); 
+    color: var(--text); 
+    line-height: 1.7; 
+}
+
+/* Schlichter, moderner Header */
+header { 
+    background-color: #CC0000; 
+    color: #ffffff; 
+    padding: 2.5rem 1rem; 
+    text-align: center; 
+    border-bottom: 3px solid var(--primary); 
+}
+
+header h1 { 
+    font-size: 2rem; 
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.3rem;
+}
+
+header p {
+    color: #aaaaaa;
+    font-size: 0.95rem;
+}
+
+.badge { 
+    display: inline-block; 
+    background-color: #000000; 
+    color: #ffffff; 
+    padding: 0.25rem 0.7rem; 
+    font-size: 0.75rem; 
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 3px;
+    margin-top: 0.8rem; 
+}
+
+/* Aufgeräumte Navigationsleiste */
+nav { 
+    background-color: var(--panel-bg); 
+    display: flex; 
+    justify-content: center; 
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+nav a { 
+    color: var(--text); 
+    text-decoration: none; 
+    padding: 0.9rem 1.5rem; 
+    font-weight: 500; 
+    font-size: 0.9rem;
+    transition: color 0.2s, background 0.2s; 
+}
+
+nav a:hover, nav a.active { 
+    color: var(--primary); 
+    background-color: #f1f1f1;
+}
+
+.container { 
+    max-width: 800px; 
+    margin: 2.5rem auto; 
+    padding: 0 1rem; 
+}
+
+/* Saubere Inhalts-Sektionen mit sanften Rändern */
+section { 
+    background: var(--panel-bg); 
+    padding: 2.5rem; 
+    margin-bottom: 2rem; 
+    border-radius: 6px; 
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+h2 { 
+    color: var(--primary); 
+    margin-bottom: 1rem; 
+    font-size: 1.5rem; 
+    font-weight: 600;
+    letter-spacing: -0.3px;
+}
+
+h3 { 
+    color: var(--accent); 
+    margin: 1.5rem 0 0.5rem 0; 
+    font-size: 1.1rem; 
+    font-weight: 600;
+}
+
+p { 
+    margin-bottom: 1rem; 
+    color: #444444;
+}
+
+ul { 
+    margin-left: 1.5rem; 
+    margin-bottom: 1rem; 
+}
+
+li { 
+    margin-bottom: 0.4rem; 
+    color: #444444;
+}
+
+.hero-img { 
+    width: 100%; 
+    height: 280px; 
+    object-fit: cover; 
+    border-radius: 4px;
+    margin-bottom: 1.5rem; 
+}
+
+.infobox { 
+    background-color: #f8f8f8; 
+    padding: 1.2rem; 
+    border-left: 3px solid var(--highlight); 
+    border-radius: 0 4px 4px 0;
+    margin-top: 1.5rem; 
+    font-size: 0.9rem; 
+}
+
+.btn { 
+    display: inline-block; 
+    background-color: var(--primary); 
+    color: #ffffff; 
+    padding: 0.7rem 1.4rem; 
+    text-decoration: none; 
+    font-weight: 500; 
+    font-size: 0.9rem;
+    border-radius: 4px;
+    margin-top: 0.5rem; 
+    transition: background 0.2s; 
+}
+
+.btn:hover { 
+    background-color: #6f1c1c; 
+}
+
+.discord-box { 
+    background: #222222; 
+    color: #ffffff; 
+    padding: 1.5rem; 
+    border-radius: 6px;
+    text-align: center; 
+    margin-top: 1.5rem; 
+}
+
+.discord-box a { 
+    color: var(--highlight); 
+    font-weight: 600; 
+    text-decoration: none; 
+}
+
+footer { 
+    background-color: var(--panel-bg); 
+    color: #777777; 
+    text-align: center; 
+    padding: 2rem; 
+    margin-top: 3rem; 
+    font-size: 0.85rem; 
+    border-top: 1px solid #e0e0e0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Die Rechte Jugend</h1>
+        <p>Freiheit, Heimat, Tradition – Für eine Zukunft in Würde.</p>
+        <div class="badge">Inoffizielle Jugendpartei / Initiative n. e. V.</div>
+    </header>
+
+    <nav>
+        <a href="index.html" class="active">Start</a>
+        <a href="ziele.html">Ziele & Satzung</a>
+        <a href="mitmachen.html">Mitmachen & Kontakt</a>
+    </nav>
+
+    <div class="container">
+        <section>
+            <h2>Wer wir sind & Wofür wir stehen</h2>
+            
+            <img src="Fotos/banner.jpg" alt="Die Rechte Jugend" class="hero-img">
+
+            <p>Wir – <strong>Matteo Neuman</strong> und <strong>F. W. </strong> – sind konsequente, heimatverbundene nationalistische Gründer. Während das etablierte Parteienkartell zusieht, wie unsere Heimat systematisch zerstört wird, ziehen wir die Reißleine. Wir haben <strong>„Die Rechte Jugend“</strong> gegründet, weil wir keine Lust mehr haben, die Zukunft unseres Volkes an Überfremdung, Kulturmarxismus und linken Zeitgeist zu verraten.</p>
+            
+            <p>Als kompromisslose, freie Initiative und nationalistische Jugendbewegung im Aufbau organisieren wir uns als nicht eingetragener Verein n. e. V. . Wir zeigen echten Widerstandsgeist: Kein Kuschelkurs mit dem System, keine Kompromisse mit den Herrschenden. Wir stehen für kompromisslosen Heimatschutz und nationale Selbstbestimmung.</p>
+            
+            <div class="infobox">
+                <strong>💡 Rechtlicher Hinweis:</strong> Da wir uns im Aufbau befinden und minderjährig sind, arbeiten wir eng mit unseren Unterstützern und Erziehungsberechtigten zusammen, um organisatorisch einen sauberen und entschlossenen Weg zu gehen.
+            </div>
+        </section>
+
+        <section>
+            <h2>Unsere Vision für die Zukunft</h2>
+            <p>Deutschland und unsere lokalen Regionen brauchen eine radikale Kehrtwende. Es braucht eine Politik, die den eigenen Bürger und die Jugend an die erste Stelle setzt. Wir wollen aufklären, vernetzen und eine echte Alternative zu dem bieten, was uns in Schulen und Medien tagtäglich vorgesetzt wird.</p>
+            <p>Klicke dich durch unsere Ziele oder werde direkt Teil unserer Bewegung!</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Die Rechte Jugend n. e. V. – Gegründet von Matteo Neuman & F. W. . Kontakt: <a href="mailto:DieReJu@proton.me" style="color: #c59b27;">DieReJu@proton.me</a></p>
+    </footer>
+</body>
+</html>

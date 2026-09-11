@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="Fotos/Logo.jpg">
+    <title>DRJ Ziele & Satzung</title>
+    <style>
+  :root { 
+    --primary: #8b2626;     /* Klarer, gedeckter Rot-Ton */
+    --accent: #2d2d2d;      /* Dunkles Anthrazit für klare Kontraste */
+    --highlight: #c59b27;   /* Dezent eingesetztes Gold */
+    --bg: #f9f9f9;          /* Sehr helles, modernes Off-White */
+    --panel-bg: #ffffff;    /* Reines Weiß für die Inhaltsboxen */
+    --text: #222222;        /* Dunkles Grau für exzellente Lesbarkeit */
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+}
+
+body { 
+    background-color: var(--bg); 
+    color: var(--text); 
+    line-height: 1.7; 
+}
+
+/* Schlichter, moderner Header */
+header { 
+    background-color: #CC0000; 
+    color: #ffffff; 
+    padding: 2.5rem 1rem; 
+    text-align: center; 
+    border-bottom: 3px solid var(--primary); 
+}
+
+header h1 { 
+    font-size: 2rem; 
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.3rem;
+}
+
+header p {
+    color: #aaaaaa;
+    font-size: 0.95rem;
+}
+
+.badge { 
+    display: inline-block; 
+    background-color: #000000; 
+    color: #ffffff; 
+    padding: 0.25rem 0.7rem; 
+    font-size: 0.75rem; 
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 3px;
+    margin-top: 0.8rem; 
+}
+
+/* Aufgeräumte Navigationsleiste */
+nav { 
+    background-color: var(--panel-bg); 
+    display: flex; 
+    justify-content: center; 
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+nav a { 
+    color: var(--text); 
+    text-decoration: none; 
+    padding: 0.9rem 1.5rem; 
+    font-weight: 500; 
+    font-size: 0.9rem;
+    transition: color 0.2s, background 0.2s; 
+}
+
+nav a:hover, nav a.active { 
+    color: var(--primary); 
+    background-color: #f1f1f1;
+}
+
+.container { 
+    max-width: 800px; 
+    margin: 2.5rem auto; 
+    padding: 0 1rem; 
+}
+
+/* Saubere Inhalts-Sektionen mit sanften Rändern */
+section { 
+    background: var(--panel-bg); 
+    padding: 2.5rem; 
+    margin-bottom: 2rem; 
+    border-radius: 6px; 
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+h2 { 
+    color: var(--primary); 
+    margin-bottom: 1rem; 
+    font-size: 1.5rem; 
+    font-weight: 600;
+    letter-spacing: -0.3px;
+}
+
+h3 { 
+    color: var(--accent); 
+    margin: 1.5rem 0 0.5rem 0; 
+    font-size: 1.1rem; 
+    font-weight: 600;
+}
+
+p { 
+    margin-bottom: 1rem; 
+    color: #444444;
+}
+
+ul { 
+    margin-left: 1.5rem; 
+    margin-bottom: 1rem; 
+}
+
+li { 
+    margin-bottom: 0.4rem; 
+    color: #444444;
+}
+
+.hero-img { 
+    width: 100%; 
+    height: 280px; 
+    object-fit: cover; 
+    border-radius: 4px;
+    margin-bottom: 1.5rem; 
+}
+
+.infobox { 
+    background-color: #f8f8f8; 
+    padding: 1.2rem; 
+    border-left: 3px solid var(--highlight); 
+    border-radius: 0 4px 4px 0;
+    margin-top: 1.5rem; 
+    font-size: 0.9rem; 
+}
+
+.btn { 
+    display: inline-block; 
+    background-color: var(--primary); 
+    color: #ffffff; 
+    padding: 0.7rem 1.4rem; 
+    text-decoration: none; 
+    font-weight: 500; 
+    font-size: 0.9rem;
+    border-radius: 4px;
+    margin-top: 0.5rem; 
+    transition: background 0.2s; 
+}
+
+.btn:hover { 
+    background-color: #6f1c1c; 
+}
+
+.discord-box { 
+    background: #222222; 
+    color: #ffffff; 
+    padding: 1.5rem; 
+    border-radius: 6px;
+    text-align: center; 
+    margin-top: 1.5rem; 
+}
+
+.discord-box a { 
+    color: var(--highlight); 
+    font-weight: 600; 
+    text-decoration: none; 
+}
+
+footer { 
+    background-color: var(--panel-bg); 
+    color: #777777; 
+    text-align: center; 
+    padding: 2rem; 
+    margin-top: 3rem; 
+    font-size: 0.85rem; 
+    border-top: 1px solid #e0e0e0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ziele & Satzung</h1>
+        <p>Wofür wir einstehen und nach welchen Regeln wir uns organisieren.</p>
+        <div class="badge">Inoffizielle Jugendpartei / Initiative n. e. V.</div>
+    </header>
+
+    <nav>
+        <a href="index.html">Start</a>
+        <a href="ziele.html" class="active">Ziele & Satzung</a>
+        <a href="mitmachen.html">Mitmachen & Kontakt</a>
+    </nav>
+
+    <div class="container">
+        <section>
+            <h2>Unsere kompromisslosen Kernziele</h2>
+            
+            <h3>1. Ethnische und Kulturelle Identität</h3>
+            <p>Unser Volk und unsere Kultur sind die Grundlage unseres Daseins. Wir fordern einen sofortigen Einwanderungsstopp, die konsequente Abschiebung von Kriminellen und Ausreisepflichtigen sowie den Erhalt unseres deutschen Volkstums gegen den erzwungenen großen Austausch.</p>
+
+            <h3>2. Radikale Systemkritik & Nationale Souveränität</h3>
+            <p>Das aktuelle System dient nicht den Interessen der Bürger, sondern globalistischen Eliten. Wir lehnen die EU, die NATO-Kriegstreiberei und die Bevormundung aus Berlin und Brüssel ab. Deutschland den Deutschen – Freiheit und Souveränität für unsere Heimat.</p>
+
+            <h3>3. Sicherheit, Härte und Ordnung</h3>
+            <p>Auf unseren Straßen, an unseren Schulen und in unseren Städten herrscht durch verfehlte Toleranzpolitik Gesetzlosigkeit. Wir fordern Härte im Strafrecht, den Schutz unserer eigenen Jugend vor Übergriffen und die Wiederherstellung von Recht, Ordnung und deutscher Leitkultur.</p>
+
+            <h3>4. Widerstand statt Anpassung</h3>
+            <p>Wir lassen uns den Mund nicht verbieten. Schluss mit woken Schulindoktrinationen, Gender-Wahn und linker Meinungsdiktatur. Wir stehen für Rückgrat, Treue zu unseren Ahnen und den Kampf für ein freies Morgen.</p>
+        </section>
+
+        <section>
+            <h2>Unsere Grundsatzsatzung n. e. V.</h2>
+            <p><strong>§ 1 Name, Sitz und Status:</strong> Die Organisation führt den Namen „Die Rechte Jugend“. Sie wurde von Matteo Neuman und F. W.  als freie politische Initiative und inoffizielle Jugendpartei in Form eines nicht eingetragenen Vereins n. e. V. ins Leben gerufen.</p>
+            <p><strong>§ 2 Zweck der Organisation:</strong> Zweck ist die politische Aufklärung, die Vertretung der Interessen junger, heimatverbundener Menschen sowie der Aufbau einer starken regionalen und überregionalen Jugendstruktur.</p>
+            <p><strong>§ 3 Mitgliedschaft:</strong> Mitglied kann jeder werden, der die Grundwerte dieser Satzung teilt, sich zur deutschen Heimat bekennt und den Willen hat, aktiv für unsere Zukunft einzustehen.</p>
+            <p><strong>§ 4 Struktur und Führung:</strong> Die Organisation arbeitet basisdemokratisch. Entscheidungen werden gemeinsam im Gründerteam getroffen. Für rechtliche Vertretungen bei Minderjährigen wirken Erziehungsberechtigte und unterstützende Koordinatoren mit.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Die Rechte Jugend n. e. V. – Gegründet von Matteo Neuman & F. W. . Kontakt: <a href="mailto:DieReJu@proton.me" style="color: #c59b27;">DieReJu@proton.me</a></p>
+    </footer>
+</body>
+</html>
